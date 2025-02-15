@@ -73,6 +73,9 @@ class MotorCtl:
         GPIO.output(self.IN4, GPIO.LOW)
                     
     def motor(self, speed_L, speed_R):
+        #if speed is out of range, warning and set to max/min value
+        if (speed_L > 100 or speed_L < -100)or (speed_R > 100 or speed_R < -100):
+            print("Speed out of range")
         speed_L = min(100, max(-100, speed_L))
         speed_R = min(100, max(-100, speed_R))
 
