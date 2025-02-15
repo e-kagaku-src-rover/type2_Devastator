@@ -137,8 +137,8 @@ class RaspiMotorCtl(Node):
             self.speed_L = 0
             self.speed_R = 0
         else:
-            self.speed_L = speed + angular
-            self.speed_R = speed - angular
+            self.speed_L = speed - angular
+            self.speed_R = speed + angular
             #calculate wheel speed in rpm
             self.speed_L = self.speed_L * 60 / (2 * math.pi * self.wheel_radius)
             self.speed_R = self.speed_R * 60 / (2 * math.pi * self.wheel_radius)
