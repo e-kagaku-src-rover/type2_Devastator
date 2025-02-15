@@ -65,8 +65,11 @@ class MotorCtl:
         GPIO.output(self.IN4, GPIO.LOW)
                     
     def motor(self, speed_L, speed_R):
-        self.pwm_L.ChangeDutyCycle(speed_L)
-        self.pwm_R.ChangeDutyCycle(speed_R)
+        speed_L= max(-100, min(100, speed_L))
+        speed_R= max(-100, min(100, speed_R))
+
+        self.pwm_L.ChangeDutyCycle(abs(speed_L))
+        self.pwm_R.ChangeDutyCycle(abs(speed_R))
         if speed_L > 0:
             GPIO.output(self.IN1, GPIO.HIGH)
             GPIO.output(self.IN2, GPIO.LOW)
