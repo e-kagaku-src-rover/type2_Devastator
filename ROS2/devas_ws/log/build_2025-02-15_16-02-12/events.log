@@ -1,0 +1,74 @@
+[0.000000] (-) TimerEvent: {}
+[0.002000] (motor_controller) JobQueued: {'identifier': 'motor_controller', 'dependencies': OrderedDict()}
+[0.002675] (motor_controller) JobStarted: {'identifier': 'motor_controller'}
+[0.098944] (-) TimerEvent: {}
+[0.201089] (-) TimerEvent: {}
+[0.302044] (-) TimerEvent: {}
+[0.404031] (-) TimerEvent: {}
+[0.504792] (-) TimerEvent: {}
+[0.605606] (-) TimerEvent: {}
+[0.706272] (-) TimerEvent: {}
+[0.806942] (-) TimerEvent: {}
+[0.907638] (-) TimerEvent: {}
+[1.008388] (-) TimerEvent: {}
+[1.109151] (-) TimerEvent: {}
+[1.210035] (-) TimerEvent: {}
+[1.312219] (-) TimerEvent: {}
+[1.413637] (-) TimerEvent: {}
+[1.514915] (-) TimerEvent: {}
+[1.615762] (-) TimerEvent: {}
+[1.716840] (-) TimerEvent: {}
+[1.817700] (-) TimerEvent: {}
+[1.918617] (-) TimerEvent: {}
+[2.019284] (-) TimerEvent: {}
+[2.119955] (-) TimerEvent: {}
+[2.220672] (-) TimerEvent: {}
+[2.321394] (-) TimerEvent: {}
+[2.422105] (-) TimerEvent: {}
+[2.522862] (-) TimerEvent: {}
+[2.623841] (-) TimerEvent: {}
+[2.724548] (-) TimerEvent: {}
+[2.825215] (-) TimerEvent: {}
+[2.926026] (-) TimerEvent: {}
+[2.997844] (motor_controller) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/tac/type2_Devastator/ROS2/devas_ws/build/motor_controller/build', '--no-deps', 'symlink_data', '--force'], 'cwd': '/home/tac/type2_Devastator/ROS2/devas_ws/build/motor_controller', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'tac', 'SSH_CLIENT': '2408:212:60c3:200:474:7518:2b9d:6591 57724 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/tac/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/home/tac/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/tac', 'OLDPWD': '/home/tac/type2_Devastator', 'TERM_PROGRAM_VERSION': '1.96.4', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-ae067b43-2c32-4ac5-9daf-b4bab1772553.sock', 'DEBUGPY_ADAPTER_ENDPOINTS': '/home/tac/.vscode-server/extensions/ms-python.debugpy-2025.0.1-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-cbaa03f4a2f00789.txt', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/tac/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/tac/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/certs/ca-certificates.crt', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/tac/.vscode-server/extensions/ms-python.debugpy-2025.0.1-linux-arm64/bundled/libs/debugpy', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/tac/type2_Devastator/ROS2/devas_ws/install:/home/tac/Unit1/unit1_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'tac', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '76', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/tac/.vscode-server/cli/servers/Stable-cd4ee3b1c348a13bafd8f9ad8060705f6d4b9cba/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/tac/.vscode-server/extensions/ms-python.debugpy-2025.0.1-linux-arm64/bundled/scripts/noConfigScripts:/home/tac/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-9de7a71d03.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/tac/Unit1/unit1_ws/install/unit1_description:/home/tac/Unit1/unit1_ws/install/send_vel:/home/tac/Unit1/unit1_ws/install/bno055:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/tac/type2_Devastator/ROS2/devas_ws/build/motor_controller', 'SSH_CONNECTION': '2408:212:60c3:200:474:7518:2b9d:6591 57724 2408:212:60c3:200:dea6:32ff:fe90:7926 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/tac/type2_Devastator/ROS2/devas_ws/build/motor_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tac/type2_Devastator/ROS2/devas_ws/install/motor_controller/lib/python3.10/site-packages:/home/tac/Unit1/unit1_ws/build/unit1_description:/home/tac/Unit1/unit1_ws/install/unit1_description/lib/python3.10/site-packages:/home/tac/Unit1/unit1_ws/build/send_vel:/home/tac/Unit1/unit1_ws/install/send_vel/lib/python3.10/site-packages:/home/tac/Unit1/unit1_ws/build/bno055:/home/tac/Unit1/unit1_ws/install/bno055/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[3.055662] (-) TimerEvent: {}
+[3.156980] (-) TimerEvent: {}
+[3.257720] (-) TimerEvent: {}
+[3.358536] (-) TimerEvent: {}
+[3.459325] (-) TimerEvent: {}
+[3.560086] (-) TimerEvent: {}
+[3.660833] (-) TimerEvent: {}
+[3.761530] (-) TimerEvent: {}
+[3.862226] (-) TimerEvent: {}
+[3.962991] (-) TimerEvent: {}
+[4.063715] (-) TimerEvent: {}
+[4.164489] (-) TimerEvent: {}
+[4.215208] (motor_controller) StdoutLine: {'line': b'running develop\n'}
+[4.264613] (-) TimerEvent: {}
+[4.365568] (-) TimerEvent: {}
+[4.466295] (-) TimerEvent: {}
+[4.567133] (-) TimerEvent: {}
+[4.667875] (-) TimerEvent: {}
+[4.768584] (-) TimerEvent: {}
+[4.869356] (-) TimerEvent: {}
+[4.909529] (motor_controller) StdoutLine: {'line': b'running egg_info\n'}
+[4.910270] (motor_controller) StdoutLine: {'line': b'writing motor_controller.egg-info/PKG-INFO\n'}
+[4.910859] (motor_controller) StdoutLine: {'line': b'writing dependency_links to motor_controller.egg-info/dependency_links.txt\n'}
+[4.911715] (motor_controller) StdoutLine: {'line': b'writing entry points to motor_controller.egg-info/entry_points.txt\n'}
+[4.912795] (motor_controller) StdoutLine: {'line': b'writing requirements to motor_controller.egg-info/requires.txt\n'}
+[4.913558] (motor_controller) StdoutLine: {'line': b'writing top-level names to motor_controller.egg-info/top_level.txt\n'}
+[4.921351] (motor_controller) StdoutLine: {'line': b"reading manifest file 'motor_controller.egg-info/SOURCES.txt'\n"}
+[4.925257] (motor_controller) StdoutLine: {'line': b"writing manifest file 'motor_controller.egg-info/SOURCES.txt'\n"}
+[4.932680] (motor_controller) StdoutLine: {'line': b'running build_ext\n'}
+[4.933514] (motor_controller) StdoutLine: {'line': b'Creating /home/tac/type2_Devastator/ROS2/devas_ws/install/motor_controller/lib/python3.10/site-packages/motor-controller.egg-link (link to .)\n'}
+[4.937193] (motor_controller) StdoutLine: {'line': b'Installing motor_controller script to /home/tac/type2_Devastator/ROS2/devas_ws/install/motor_controller/lib/motor_controller\n'}
+[4.939024] (motor_controller) StdoutLine: {'line': b'\n'}
+[4.939585] (motor_controller) StdoutLine: {'line': b'Installed /home/tac/type2_Devastator/ROS2/devas_ws/build/motor_controller\n'}
+[4.940281] (motor_controller) StdoutLine: {'line': b'running symlink_data\n'}
+[4.940835] (motor_controller) StdoutLine: {'line': b'symbolically linking /home/tac/type2_Devastator/ROS2/devas_ws/build/motor_controller/resource/motor_controller -> /home/tac/type2_Devastator/ROS2/devas_ws/install/motor_controller/share/ament_index/resource_index/packages\n'}
+[4.941852] (motor_controller) StdoutLine: {'line': b'symbolically linking /home/tac/type2_Devastator/ROS2/devas_ws/build/motor_controller/package.xml -> /home/tac/type2_Devastator/ROS2/devas_ws/install/motor_controller/share/motor_controller\n'}
+[4.969708] (-) TimerEvent: {}
+[5.071085] (-) TimerEvent: {}
+[5.074814] (motor_controller) CommandEnded: {'returncode': 0}
+[5.145632] (motor_controller) JobEnded: {'identifier': 'motor_controller', 'rc': 0}
+[5.148766] (-) EventReactorShutdown: {}

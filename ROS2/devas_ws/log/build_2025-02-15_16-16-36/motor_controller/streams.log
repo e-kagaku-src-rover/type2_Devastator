@@ -1,0 +1,17 @@
+[2.987s] Invoking command in '/home/tac/type2_Devastator/ROS2/devas_ws/build/motor_controller': PYTHONPATH=/home/tac/type2_Devastator/ROS2/devas_ws/build/motor_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tac/type2_Devastator/ROS2/devas_ws/install/motor_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/tac/type2_Devastator/ROS2/devas_ws/build/motor_controller/build --no-deps symlink_data
+[4.224s] running develop
+[4.922s] running egg_info
+[4.922s] writing motor_controller.egg-info/PKG-INFO
+[4.923s] writing dependency_links to motor_controller.egg-info/dependency_links.txt
+[4.924s] writing entry points to motor_controller.egg-info/entry_points.txt
+[4.925s] writing requirements to motor_controller.egg-info/requires.txt
+[4.926s] writing top-level names to motor_controller.egg-info/top_level.txt
+[4.934s] reading manifest file 'motor_controller.egg-info/SOURCES.txt'
+[4.938s] writing manifest file 'motor_controller.egg-info/SOURCES.txt'
+[4.946s] running build_ext
+[4.947s] Creating /home/tac/type2_Devastator/ROS2/devas_ws/install/motor_controller/lib/python3.10/site-packages/motor-controller.egg-link (link to .)
+[4.952s] Installing motor_controller script to /home/tac/type2_Devastator/ROS2/devas_ws/install/motor_controller/lib/motor_controller
+[4.953s] 
+[4.954s] Installed /home/tac/type2_Devastator/ROS2/devas_ws/build/motor_controller
+[4.955s] running symlink_data
+[5.089s] Invoked command in '/home/tac/type2_Devastator/ROS2/devas_ws/build/motor_controller' returned '0': PYTHONPATH=/home/tac/type2_Devastator/ROS2/devas_ws/build/motor_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tac/type2_Devastator/ROS2/devas_ws/install/motor_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/tac/type2_Devastator/ROS2/devas_ws/build/motor_controller/build --no-deps symlink_data

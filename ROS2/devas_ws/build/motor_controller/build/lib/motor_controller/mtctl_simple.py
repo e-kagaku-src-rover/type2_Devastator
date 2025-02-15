@@ -73,11 +73,8 @@ class MotorCtl:
         GPIO.output(self.IN4, GPIO.LOW)
                     
     def motor(self, speed_L, speed_R):
-        speed_L = min(100, max(-100, speed_L))
-        speed_R = min(100, max(-100, speed_R))
-
-        self.pwm_L.ChangeDutyCycle(abs(speed_L))
-        self.pwm_R.ChangeDutyCycle(abs(speed_R))
+        self.pwm_L.ChangeDutyCycle(speed_L)
+        self.pwm_R.ChangeDutyCycle(speed_R)
         if speed_L > 0:
             GPIO.output(self.IN1, GPIO.HIGH)
             GPIO.output(self.IN2, GPIO.LOW)
@@ -90,7 +87,6 @@ class MotorCtl:
         else:
             GPIO.output(self.IN3, GPIO.LOW)
             GPIO.output(self.IN4, GPIO.HIGH)
-
     
     
     
@@ -106,11 +102,6 @@ class RaspiMotorCtl(Node):
     
     def __init__(self):
         super().__init__('raspi_motor_ctl')
-        self.speed_L = 0
-        self.speed_R = 0
-        self.wheel_radius = 0.025
-        self.max_rpm = 130
-
         self.motor_ctl = MotorCtl()
         self.subscription = self.create_subscription(
             Twist,
@@ -122,7 +113,8 @@ class RaspiMotorCtl(Node):
         self.subscription  # prevent unused variable warning
         self.get_logger().info("Subscribed to /cmd_vel topic")
 
-        
+        self.speed_L = 0
+        self.speed_R = 0
 
     def listener_callback(self, msg):
         self.get_logger().info('Linear: %f, Angular: %f' % (msg.linear.x, msg.angular.z))
@@ -136,22 +128,13 @@ class RaspiMotorCtl(Node):
         else:
             self.speed_L = speed + angular
             self.speed_R = speed - angular
-            #calculate wheel speed in rpm
-            self.speed_L = self.speed_L * 60 / (2 * math.pi * self.wheel_radius)
-            self.speed_R = self.speed_R * 60 / (2 * math.pi * self.wheel_radius)
-            #convert wheel speed to pwm
-            self.speed_L = self.speed_L * 100 / self.max_rpm
-            self.speed_R = self.speed_R * 100 / self.max_rpm
-            
             self.motor_ctl.motor(self.speed_L, self.speed_R)
-
         
     def timer_cb(self):
         speed_msg = Float64MultiArray()
-        speed_msg.data = [float(self.speed_L), float(self.speed_R)]
-        self.get_logger().info('Speed L: %f, Speed R: %f' % (self.speed_L, self.speed_R))
+        speed_msg.data = [self.speed_L, self.speed_R]
         self.speed_pub.publish(speed_msg)
-        
+        self.get_logger().info('Speed_L: %f, Speed_R: %f' % (self.speed_L, self.speed_R))
         
 
 def main(args=None):
